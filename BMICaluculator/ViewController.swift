@@ -26,9 +26,9 @@ class ViewController: UIViewController {
     }
     
     func caluculation(height: Double, weight: Double) -> String {
-        let h = height / 100 //cmをmに変換
+        let h = height / 100
         let w = weight
-        var result = w/(h*h)
+        var result = w / (h*h)
         result = floor(result * 10) / 10
         
         return result.description
